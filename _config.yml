@@ -1,11 +1,11 @@
 # Site settings
 author: Tanner Townsend
-title: 
+title: Tanner's Blog
 header-img: img/home-bg.png
 email: rsmcwow@gmail.com
 copyright_name: Tanner Townsend
 description: > # this means to ignore newlines until "baseurl:"
-  
+  A Blog by Tanner
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  Xearta
