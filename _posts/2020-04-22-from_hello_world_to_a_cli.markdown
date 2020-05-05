@@ -14,18 +14,18 @@ While messing with my web site I was using, I figured out that the date in the U
 
 [CLI.rb] This part asks the user for a date in a certain format and checks to see if the format is valid with the #valid_date? method (below)
 ```
-    message =  "Enter the week you want to see [2015+] (Format: MM-DD-YYYY)"
-    puts message
-    date = gets.chomp
+message =  "Enter the week you want to see [2015+] (Format: MM-DD-YYYY)"
+puts message
+date = gets.chomp
 
-    # Check if the date is valid in the format we need (MM-DD-YYYY)
-    until valid_date?(date)
-      puts "\nIncorrect date format! Please try again.\n"
-      puts message
-      date = gets.chomp
-    end
-    # Convert date to the necessary format for scraper
-    date2 = date.split('-')
+# Check if the date is valid in the format we need (MM-DD-YYYY)
+until valid_date?(date)
+  puts "\nIncorrect date format! Please try again.\n" 
+	puts message
+  date = gets.chomp
+end
+# Convert date to the necessary format for scraper
+date2 = date.split('-')
 ```
 		
 [CLI.rb] This part checks to see if the date is valid. This part took some time researching to figure out. ([StackOverflow](https://stackoverflow.com/questions/39368909/ruby-date-format-validation))
@@ -40,16 +40,16 @@ def valid_date?(string)
 ```
 [CLI.rb] This part creates the book objects with the given date. (This also accepts a genre that my application works with too)
 ```
-		    # Create the book objects (15 books)
-          BookList::Scraper.get_book_list(date2,genre).each do |b|
-          BookList::Book.new_from_webpage(b)
-        end
+# Create the book objects (15 books)
+BookList::Scraper.get_book_list(date2,genre).each do |b|
+  BookList::Book.new_from_webpage(b)
+end
 ```
 [scraper.rb] This is from the scraper and uses Nokogiri to scrape the page. In the code, you can see the use of the date array that the application generates in the URL. As well, at the end it uses the genre that the application asks for later.
 ```
 def self.get_page(date,genre)
     doc = Nokogiri::HTML(open("https://www.nytimes.com/books/best-sellers/#{date[2]}/#{date[0]}/#{date[1]}/combined-print-and-e-book-#{genre}/"))
-  end
+end
 ```
 
 I used Avi's tutorial on the learn page for help on setting up my application. Then I found a sample project on the learn page which was very similar to what I was actually doing. Since programmers are *lazy*, I would use a lot of inspiration from the code on that project for my application. As well, for some of my more advanced features (the date validater), I used my Googling skills to help with those. Thus, my application was formed.
