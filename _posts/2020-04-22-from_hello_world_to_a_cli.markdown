@@ -12,7 +12,7 @@ I struggled to even come up with an idea, let alone an entire application. After
 
 While messing with my web site I was using, I figured out that the date in the URL changed as I changed the week. This means that I could make my application more dynamic for the user! Below is an example of the date part of my code.
 
-*[CLI.rb] *This part asks the user for a date in a certain format and checks to see if the format is valid with the #valid_date? method (below)
+*[CLI.rb]* This part asks the user for a date in a certain format and checks to see if the format is valid with the #valid_date? method (below)
 ```
 message =  "Enter the week you want to see [2015+] (Format: MM-DD-YYYY)"
 puts message
@@ -45,7 +45,7 @@ BookList::Scraper.get_book_list(date2,genre).each do |b|
   BookList::Book.new_from_webpage(b)
 end
 ```
-*[scraper.rb] *This is from the scraper and uses Nokogiri to scrape the page. In the code, you can see the use of the date array that the application generates in the URL. As well, at the end it uses the genre that the application asks for later.
+*[scraper.rb]* This is from the scraper and uses Nokogiri to scrape the page. In the code, you can see the use of the date array that the application generates in the URL. As well, at the end it uses the genre that the application asks for later.
 ```
 def self.get_page(date,genre)
     doc = Nokogiri::HTML(open("https://www.nytimes.com/books/best-sellers/#{date[2]}/#{date[0]}/#{date[1]}/combined-print-and-e-book-#{genre}/"))
