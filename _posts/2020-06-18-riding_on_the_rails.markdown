@@ -99,5 +99,5 @@ Looking forward, I plan to continue to work on this project and create more smal
 
 **Links:**
 - [My project](https://github.com/Xearta/rails-appointment-tracker)
-- [Notion | What I use for the guide and project tracker](https://notion.so)
+- [Notion - What I use for the guide and project tracker](https://notion.so)
 - [Devise](https://github.com/heartcombo/devise)
