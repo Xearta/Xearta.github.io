@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Riding On The Rails"
-date:       2020-06-18 20:17:15 +0000
+date:       2020-06-18 16:17:15 -0400
 permalink:  riding_on_the_rails
 ---
 
