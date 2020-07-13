@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Trail Master - The JavaScript With Rails API Project"
-date:       2020-07-13 17:27:33 +0000
+date:       2020-07-13 13:27:33 -0400
 permalink:  trail_master_-_the_javascript_with_rails_api_project
 ---
 
@@ -49,6 +49,7 @@ class Trail {
 2. I had to send a `GET` `fetch` request to the backend
 3. I had to convert the response to JSON
 4. I had to iterate through each JSON object and create JavaScript objects
+
 ```
 fetch("http://localhost:3000/trails")
 .then(resp => resp.json())
@@ -62,13 +63,16 @@ fetch("http://localhost:3000/trails")
   }
 }
 ```
+
 5. I had to display them on the page
+
 ```
 Trail.listTrails();
 ```
 
 ## Building a Filter System
-#### Filter Buttons
+---
+### Filter Buttons
 ---
 
 After completing the requirements for the project, I decided to do a few stretch goals of getting filtering to work. I found a **library** for creating a filter system with animations online called [MixItUp](https://www.kunkalabs.com/mixitup/). After reading through the documentation, I figured this would be a great tool that I could utilize for filtering by **difficulty, distance, and elevation gain**. 
@@ -102,7 +106,7 @@ document.querySelector('#filter-btn').addEventListener('click', () => {
 
 I also did this with **completed** or **incomplete** to be able to filter the trails by completion status.
 
-#### Search Filter
+### Search Filter
 ---
 I wanted to have a search bar to be able to filter through the trails to find one that matches the searched name or location. Unfortunately, **MixItUp** doesn't have a search functionality. So, I had to create one from scratch. Not a problem, we have *Google*, after all.
 
