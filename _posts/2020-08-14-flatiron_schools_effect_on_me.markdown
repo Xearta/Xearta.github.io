@@ -1,16 +1,18 @@
 ---
 layout: post
 title:      "Flatiron School's Effect On Me"
-date:       2020-08-14 16:03:18 +0000
+date:       2020-08-14 12:03:19 -0400
 permalink:  flatiron_schools_effect_on_me
 ---
 
 ## Introduction
+---
 Coming to the conclusion of my journey at Flatiron School, I decided I wanted my last blog post to be about my journey as a student at Flatiron. I wanted to go through my previous projects and blog posts, see how I grew as a software developer, and decide if Flatiron was worth it for me. Each section will talk about the projects and at the bottom there will be links to each of the projects GitHub repos.
 
 I want to preface by saying that I had some knowledge with programming through previous experience in Java, and JavaScript.
 
 ## Ruby
+---
 The first module was basic **Ruby**. With my prior knowledge of programming concepts, I was able to breeze through this section but, I did learn some things along the way. The biggest takeaway from this module for me was the ability to scrape web sites for data. I knew it was possible but, I didn't know that there were `gem`s like `nokogiri` to make it **very** simple to do.
 
 For the final project of this section, I was tasked to create a CLI (Command Line Interface) that would scrape a website and present the user with some information. Here are some snip-its from my project.
@@ -32,6 +34,7 @@ def self.get_book_list(date,genre)
 end
 ```
 ## Sinatra
+---
 This is really when I got my feet wet! The Sinatra section covers SQL, ORMs, ActiveRecord, and Sinatra. SQL is a database language that is *insanely* easy to learn enough to get by. It can be difficult to learn more advanced features  but, I didn't need any advanced features for any of my projects. ORMs (Object Relational Mapping) and ActiveRecord go hand-in-hand. ActiveRecord is Ruby's version of an ORM and makes it very easy to deal with ORMs in Ruby.
 
 Learning Sinatra was very insightful in understanding how web sites work. I learned about the seven RESTful routes, MVCs, nested forms, sessions and cookies, user authentication, and secure passwords. This section had a lot of big takeaways but, the highlight would be user authentication and secure passwords. Using a gem like `bcrypt`, I was able to hash the passwords of the users and not store them into my database as plain text.
@@ -62,6 +65,7 @@ end
 ```
 
 ## Rails
+---
 Ruby on Rails is just another Ruby framework like Sinatra. However, it is **much** larger and more comprehensive. The good thing is, it wasn't very hard at all to transition from Sinatra to Rails. In fact, Rails feels so much easier to use. I learned how to do CRUD actions in Rails, validations, nested forms, layouts and partials, routing, nested routing and 3rd party authentication. My biggest takeaway from Rails would be the validations for the models and the 3rd party authentication.
 
 For my final project in Rails, I re-created my appointment tracker. It may seem redundent but, with the extra features that Rails offers, my project in Rails was able to be on another level compared to the Sinatra version. Here is a snip-it of some of the validations.
@@ -80,6 +84,7 @@ validates :age, :presence => true
 
 
 ## JavaScript with Rails
+---
 This is when it got really exciting! I knew a bit of JavaScript prior to starting at Flatiron which did come in handy. However, prior knowledge is definetly not necessary! I was surprised that I was able to easily switch into a JavaScript mindset after learning Ruby for the previous three months. In the JavaScript module I learned how to Manipulate the DOM, JS event handling, scope, hoisting, fetch, inheritence, and Rails as an API. The biggest takeaway by far was using `fetch` to communicate with a server.
 
 For my project in the JavaScript and Rails section, I created a Trail Master web site. Trail Master uses Rails as an API for the backend. It allows users to view, create, edit, and delete trails with an asynchronous `fetch` call. Here is a snip-it from my project where I use a `fetch` `GET` request to get all of the trails from the server.
@@ -111,6 +116,7 @@ fetch('http://localhost:3000/trails')
 ```
 
 ## React and Redux
+---
 This module should really be split into two seperate modules. I don't think that I had enough time to fully grasp React and Redux within the module time (three weeks). Here is a list of what is covered in each section.
 
 * **React**: NPM, JSX, Components, Props, State, Events in React, Form Handling, Lifecycle Methods, fetch in React, Types of Components, React Router.
@@ -151,11 +157,13 @@ export const productListReducer = ( state = { products: [] }, action) => {
 ```
 
 ## Conclusion
+---
 In conclusion, I would say that Flatiron School was definitely worth it for me! I learned so much about web development that I had no clue about. I felt that the first three modules were explained and structured very well. However, the last two were a bit all over the place. I wish the JavaScript module was designed with more example labs and I wish that the React and Redux module was split into two seperate modules. I feel that the last module has a lot of information in a short amount of time.
 
 My future plans are the continue with web development and continue to build upon the skills I learned. I want to continue to work on React, learn new frameworks and even learn mobile development *(Maybe...React Native)*
 
 ## Links
+---
 * [Ruby Book List CLI](https://github.com/xearta/book_list_cli)
 * [Sinatra Appointment Tracker](https://github.com/Xearta/sinatra-appointment-tracker)
 * [Rails Appointment Tracker](https://github.com/Xearta/rails-appointment-tracker)
